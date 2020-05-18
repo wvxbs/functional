@@ -1,0 +1,18 @@
+html,body{
+    background-color: #292929;
+    user-select: none;
+    margin: 0;
+    height: 100%;
+    transition: ease-in-out .3s;
+  }
+  .title{
+    color : white
+  }
+  .box{
+    background-color: rgb(54, 54, 54);
+    transition: ease-in-out .3s;
+  }
+
+  p{
+    color: white;
+  }
