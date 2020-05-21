@@ -1,3 +1,6 @@
+var SequenceArr = []
+var i = 0
+
 export const Fibonacci = () => {
     const Ops = [
         {
@@ -22,8 +25,25 @@ export const Fibonacci = () => {
 
 }
 
-const OperationArray = Ops => {
-    var Results = []
+const OperationArray = Ops => { 
+    var num = 20
+    var a = 1, b = 0, temp
 
-    return Results
+    Sequence(a,b,temp,num)
+
+    return SequenceArr
+
+}
+
+const Sequence = (a,b,temp,num) => {
+    if (num >= 0){
+      temp = a
+      a = a + b
+      b = temp
+      SequenceArr.push(b)
+      num--
+
+      Sequence(a,b,temp,num)
+    }
+    
 }

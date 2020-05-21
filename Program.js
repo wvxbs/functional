@@ -5,18 +5,24 @@ import { ArrayMultiply } from './src/ArrayMultiply.js'
 
 window.onload = () => {
     const Program = () => {
-        PrintResults(Calculator())
+        PrintResultsFromArray(Calculator())
         PrintResults(Fibonacci())
         Multiplier()
         ArrayMultiply()
 
     }
 
-    const PrintResults = Arr => {
+    const PrintResultsFromArray = Arr => {
         var str = ""
         Arr.map((item, i) => {
             str = str + `\n Item: ${i + 1} Resultado: ${item}`
         })
+    
+        console.log(str)
+    }
+
+    const PrintResults = val => {
+        var str = `\n Item: ${1} Resultado: ${val}`
     
         console.log(str)
     }

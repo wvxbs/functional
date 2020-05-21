@@ -15,7 +15,7 @@ export const Calculator = () => {
         {
             first : 1209127,
             second : 593,
-        },
+        },      
     ]
 
     return OperationArray(Ops)
@@ -25,7 +25,7 @@ const OperationArray = Ops =>{
     var Results =[]
 
     Results.push(Soum(Ops[0].first, Ops[0].second))
-    Results.push(Subtract(Ops[1].first, Ops[1].second))
+    Results.push(Subtract(Ops[1].first, Ops[1].second)  )
     Results.push(Multiply(Ops[2].first, Ops[2].second))
     Results.push(Divide(Ops[3].first, Ops[3].second))
 
@@ -45,7 +45,7 @@ const Subtract = (first, second) =>{
 }
 
 const Multiply = (first, second) =>{
-    var Result = first * second
+    var Result =  first * second
 
     return Result
 }
