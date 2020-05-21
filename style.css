@@ -1,10 +1,5 @@
-:root{
-  --darkmode-background-color : #292929,
-  --lightmode-background-color : white
-}
-
 html,body{
-    background-color: var(--lightmode-background-color);
+    background-color: #292929;
     user-select: none;
     margin: 0;
     height: 100%;

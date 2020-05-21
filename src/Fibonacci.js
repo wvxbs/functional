@@ -1,49 +1,35 @@
 var SequenceArr = []
-var i = 0
 
 export const Fibonacci = () => {
-    const Ops = [
-        {
-            first : 3854,
-            second : 6523,
-        },
-        {
-            first : 2856,
-            second : 438,
-        },
-        {
-            first : 39564,
-            second : 2756,
-        },
-        {
-            first : 1209127,
-            second : 593,
-        },
-    ]
+    const Ops = [5, 10, 20, 50]
 
     return OperationArray(Ops)
 
 }
 
 const OperationArray = Ops => { 
-    var num = 20
-    var a = 1, b = 0, temp
+    var First = 1, Second = 0,Temp
+    var resultsArray = []
 
-    Sequence(a,b,temp,num)
+    Ops.map(item => {
+        SequenceArr = []
+        Sequence(First,Second,Temp,item)
+        resultsArray.push(`${SequenceArr[item -1]} Posição: ${item}`)
+    })
 
-    return SequenceArr
+    return resultsArray
 
 }
 
-const Sequence = (a,b,temp,num) => {
-    if (num >= 0){
-      temp = a
-      a = a + b
-      b = temp
-      SequenceArr.push(b)
-      num--
+const Sequence = (First,Second,Temp,i) => {
+    if (i > 0){
+        Temp = First
+        First = First + Second
+        Second = Temp
+        SequenceArr.push(Second)
+        i--
 
-      Sequence(a,b,temp,num)
+        Sequence(First ,Second,Temp,i)
     }
     
 }
