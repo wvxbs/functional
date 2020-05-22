@@ -1,21 +1,21 @@
 export const Calculator = () => {
     const Ops = [
         {
-            first : 3854,
-            second : 6523,
+            First : 3854,
+            Second : 6523
         },
         {
-            first : 2856,
-            second : 438,
+            First : 2856,
+            Second : 438
         },
         {
-            first : 39564,
-            second : 2756,
+            First : 39564,
+            Second : 2756
         },
         {
-            first : 1209127,
-            second : 593,
-        },      
+            First : 1209127,
+            Second : 593
+        }
     ]
 
     return OperationArray(Ops)
@@ -24,34 +24,35 @@ export const Calculator = () => {
 const OperationArray = Ops =>{
     var Results =[]
 
-    Results.push(Soum(Ops[0].first, Ops[0].second))
-    Results.push(Subtract(Ops[1].first, Ops[1].second)  )
-    Results.push(Multiply(Ops[2].first, Ops[2].second))
-    Results.push(Divide(Ops[3].first, Ops[3].second))
+    Results.push(Soum(Ops[0].First, Ops[0].Second))
+    Results.push(Subtract(Ops[1].First, Ops[1].Second))
+    Results.push(Multiply(Ops[2].First, Ops[2].Second))
+    Results.push(Divide(Ops[3].First, Ops[3].Second))
 
     return Results
 }
 
-const Soum = (first, second) =>{
-    var Result = first + second
+
+const Soum = (First, Second) =>{
+    var Result = First + Second
 
     return Result
 }
 
-const Subtract = (first, second) =>{
-    var Result = first - second
+const Subtract = (First, Second) =>{
+    var Result = First - Second
 
     return Result
 }
 
-const Multiply = (first, second) =>{
-    var Result =  first * second
+const Multiply = (First, Second) =>{
+    var Result =  First * Second
 
     return Result
 }
 
-const Divide = (first, second) =>{
-    var Result = first / second
+const Divide = (First, Second) =>{
+    var Result = First / Second
 
     return Result
 }

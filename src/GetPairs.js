@@ -1,20 +1,21 @@
-var MultiplyArray = []
+var ImparArray = []
 
-export const Multiplier = () => {
+export const GetPairs = () => {
     return OperationArray([181, 82, 192, 104, 65, 75, 57, 156, 92, 69, 147, 142, 184, 134, 155])
 
 } 
 
 const OperationArray = Ops => { 
     Multiply(Ops, 0)
-    return MultiplyArray
+    return ImparArray
 
 }
 
 const Multiply = (item, i) => {
     if (i < 15){
-        var temp = item[i] * item[i]
-        MultiplyArray.push(temp)
+        if(item[i] % 2 == 1){
+            ImparArray.push(item[i])
+        }
         i++
 
         Multiply(item, i)
