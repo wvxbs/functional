@@ -5,6 +5,11 @@ export const ArraySoum = () => {
 
 } 
 
+export const ArraySoum2 = arr => {
+    return OperationArray(arr)
+
+}
+
 const OperationArray = Ops => { 
     SoumArr(Ops, 0,0)
     return Soum

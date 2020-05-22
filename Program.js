@@ -1,8 +1,8 @@
 import { Calculator } from './src/Calculator.js'
 import { Fibonacci } from './src/Fibonacci.js'
-import { Multiplier } from './src/Multiplier.js'
-import { ArraySoum } from './src/ArraySoum.js'
-import { GetPairs } from './src/GetPairs.js'
+import { Multiplier, Multiplier2 } from './src/Multiplier.js'
+import { ArraySoum, ArraySoum2} from './src/ArraySoum.js'
+import { GetPairs, GetPairs2 } from './src/GetPairs.js'
 
 window.onload = () => {
     const Program = () => {
@@ -11,6 +11,11 @@ window.onload = () => {
         PrintResultsFromArray("3", "Posição", Multiplier())
         PrintResultsFromArray("4", "Posição",GetPairs())
         PrintResults("5", "Item", ArraySoum())
+
+
+        PrintResultsFromArray("6", "Posição", Multiplier2(Arr))
+        PrintResultsFromArray("7", "Posição",GetPairs2(Arr))
+        PrintResults("8", "Item", ArraySoum2(Arr))
 
     }
 
@@ -35,4 +40,8 @@ const PrintResults = (Index,Item,Val) => {
 const Exercise = Index => {
     console.log(`Exercício ${Index}:`)
 
+}
+
+var Arr = () =>{
+    return [181, 82, 192, 104, 65, 75, 57, 156, 92, 69, 147, 142, 184, 134, 155]
 }

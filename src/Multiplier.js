@@ -5,6 +5,11 @@ export const Multiplier = () => {
 
 } 
 
+export const Multiplier2 = arr => {
+    return OperationArray(arr)
+
+} 
+
 const OperationArray = Ops => { 
     Multiply(Ops, 0)
     return MultiplyArray
