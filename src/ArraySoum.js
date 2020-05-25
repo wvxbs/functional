@@ -5,9 +5,19 @@ export const ArraySoum = () => {
 
 } 
 
-export const ArraySoum2 = arr => {
-    return OperationArray(arr)
+export const ArraySoum2 = () => {
+    return FirstOrderSoumArr([181, 82, 192, 104, 65, 75, 57, 156, 92, 69, 147, 142, 184, 134, 155])
 
+}
+
+const FirstOrderSoumArr = Ops => {
+    var Temp = 0
+
+    Ops.map(item => {
+        Temp = Temp + item
+    })
+
+    return Temp
 }
 
 const OperationArray = Ops => { 
@@ -17,7 +27,7 @@ const OperationArray = Ops => {
 }
 
 const SoumArr = (Item, Temp,i) => {
-    if (i < 15){
+    if (i < Item.lenght){
         Temp = Temp + Item[i]
         i++
 

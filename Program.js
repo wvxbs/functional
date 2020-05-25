@@ -13,9 +13,9 @@ window.onload = () => {
         PrintResults("5", "Item", ArraySoum())
 
 
-        PrintResultsFromArray("6", "Posição", Multiplier2(Arr))
-        PrintResultsFromArray("7", "Posição",GetPairs2(Arr))
-        PrintResults("8", "Item", ArraySoum2(Arr))
+        PrintResultsFromArray("6", "Posição", Multiplier2())
+        PrintResultsFromArray("7", "Posição",GetPairs2())
+        PrintResults("8", "Item", ArraySoum2())
 
     }
 
@@ -40,8 +40,4 @@ const PrintResults = (Index,Item,Val) => {
 const Exercise = Index => {
     console.log(`Exercício ${Index}:`)
 
-}
-
-var Arr = () =>{
-    return [181, 82, 192, 104, 65, 75, 57, 156, 92, 69, 147, 142, 184, 134, 155]
 }
